@@ -33,11 +33,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <meta-data android:name="insert_custom_url" android:value="https://lgottber-test-dot-mobile-device-dot-pendo-atlas.appspot.com/" />
-        <meta-data android:name="insert_custom_socket_url" android:value="https://lgottber-test-dot-app-dot-pendo-atlas.appspot.com/" />
-        <meta-data android:name="insert_custom_analytics_url" android:value="https://lgottber-test-dot-mobile-data-dot-pendo-atlas.appspot.com/" />
+        <meta-data android:name="insert_custom_url" android:value="https://mobile-device.pendo-atlas.pendo-dev.com" />
+        <meta-data android:name="insert_custom_socket_url" android:value="https://app.pendo-atlas.pendo-dev.com" />
+        <meta-data android:name="insert_custom_analytics_url" android:value="https://mobile-data.pendo-atlas.pendo-dev.com" />
         <meta-data android:name="insert_cname_enabled" android:value="false" />
-        <meta-data android:name="insert_debug_logging" android:value="true" />
+        <meta-data
+            android:name="insert_debug_logging"
+            android:value="true" />
     </application>
 
 </manifest>
