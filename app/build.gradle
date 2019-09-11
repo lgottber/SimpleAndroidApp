@@ -18,10 +18,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    android {
+        lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+//            abortOnError false
+        }
+    }
 }
 
 dependencies {
-    implementation group:'sdk.pendo.io' , name:'pendoIO', version:'01.08.19-guides-SNAPSHOT', changing:true
+    implementation group:'sdk.pendo.io' , name:'pendoIO', version:'09.09.19-QA-SNAPSHOT', changing:true
     implementation 'com.android.support:multidex:1.0.3'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'

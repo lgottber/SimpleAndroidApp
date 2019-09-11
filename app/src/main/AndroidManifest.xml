@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sampleandroid">
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -26,20 +24,22 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="pendo-12d321f3"/>
+                <data android:scheme="pendo-5b12836e"/>
             </intent-filter>
             <intent-filter>
-                <action android:name="12d321f3" />
+                <action android:name="5b12836e" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <meta-data android:name="insert_custom_url" android:value="https://mobile-device.pendo-atlas.pendo-dev.com" />
         <meta-data android:name="insert_custom_socket_url" android:value="https://app.pendo-atlas.pendo-dev.com" />
         <meta-data android:name="insert_custom_analytics_url" android:value="https://mobile-data.pendo-atlas.pendo-dev.com" />
+
+
         <meta-data android:name="insert_cname_enabled" android:value="false" />
-        <meta-data
-            android:name="insert_debug_logging"
-            android:value="true" />
+        <meta-data android:name="insert_debug_logging" android:value="true" />
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
